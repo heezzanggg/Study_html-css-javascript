@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트여러줄입력하기</title>
+</head>
+<body>
+ <form>
+  <fieldset>
+  	<legend>배송정보</legend>
+  	<ul>
+  		<li>
+  		 <label for="u_name">이름</label>
+  		 <input type="text" id="u_name" autofocus required>
+  		</li>
+  		<li>
+  		<label for="addr">배송 주소</label>
+  		<input type="text" id="addr" required>
+  		</li>
+  		<li>
+  		<label for="mail">이메일</label>
+  		<input type="text" id="mail" required>
+  		</li>
+  		<li>
+  		<label for="tel">연락처</label>
+  		<input type="text" id="tel" required>
+  		</li>
+  		<li>
+  		<label for="date">배송지정</label>
+  		<input type="date" id="date" required><small>(주문일로부터 최소 3일 이후)</small>
+  		</li>
+  		<li>
+  		<label for="memo">메모</label>
+  		<textarea id="memo" cols="40" rows="4"></textarea>
+  		</li>
+  	</ul>
+  </fieldset>
+ </form>
+</body>
+</html>
