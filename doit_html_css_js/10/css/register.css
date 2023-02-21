@@ -45,3 +45,9 @@ body {
 	margin: auto;
 	padding: 7px 25px;
 }
+
+#signup label {
+	float: left; /*왼쪽으로 배치*/
+	width: 110px; /*너비 110px 지정*/
+	font-size: 13px;
+}
