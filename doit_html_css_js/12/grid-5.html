@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS Grid Layout</title>
     <style>
+      /*그리드 라인은 시작 번호와 끝 번호를 일일이 지정해서 레이아웃을 만들어야 함*/
       #wrapper{
         width:700px;
         display:grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-rows:repeat(3, 100px);
+        grid-template-columns:repeat(3, 1fr); /*칼럼은 1fr씩 3개*/
+        grid-template-rows:repeat(3, 100px); /*줄은 100px싹 3개*/
       }
       .box{
         padding:15px;
@@ -35,9 +36,10 @@
         }
       .box4 {
         background-color:#ffd000;
-        grid-column-start:3;
+        grid-column-start:3;  
         grid-row-start:3;
       }
+      /*칼럼이나 줄을 하나씩만 차지 할 경우는 grid-column-start 나 grid-row-start속성을 이용해 시작번호만 지정하고 끝번호는 지정 하지 않아도 됨*/
     </style>
   </head>
   <body>
