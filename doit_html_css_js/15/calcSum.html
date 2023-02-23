@@ -6,6 +6,24 @@
 	<title>1부터 n까지 더하기</title>
 </head>
 <body>
+	<script>
+		//함수 선언
+		function calcSum(n){
+			var sum = 0;
+
+			for(let i = 0 ; i< n+1 ; i++){
+				sum += i;
+			}
+
+			document.write("1부터" + n +"까지 더하면" + sum);
+		}
+
+		//함수호출
+		var userNum = prompt("얼마까지 더할까요?");
+		if(userNum !== null){
+			calcSum(parseInt(userNum));
+		}
+	</script>
 
 </body>
 </html>

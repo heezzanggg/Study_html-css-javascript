@@ -18,13 +18,28 @@
   
 	<script>
 		var cover = document.getElementById("cover");
+
 		cover.addEventListener("mouseover",function() {
       cover.src = "images/easys-2.jpg";
     });
 
+    /*
+    cover.addEventListener("mouseover",changePic);
+    function changePic(){
+      cover.src = "images/easys-2.jpg";
+    }
+    */
+
     cover.addEventListener("mouseout", function() {
       cover.src = "images/easys-1.jpg";
     });  
+
+    /*
+    cover.addEventListener("mouseout",originPic);
+    function originPic(){
+      cover.src = "images/easys-1.jpg";
+    }
+    */
 	</script>
 </body>
 </html>

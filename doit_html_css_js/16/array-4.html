@@ -10,7 +10,7 @@
 	<script>
     // 인수가 1개일 경우
     var numbers = [1, 2, 3, 4, 5];
-    var newNumbers = numbers.splice(2);
+    var newNumbers = numbers.splice(2); //splice()인수가 지정한 인덱스의 요소부터 배열의 맨 끝 요소까지 삭제
     document.write("반환된 배열 : " + newNumbers + "<br>" );
     document.write("변경된 배열 : " + numbers );
     document.write("<hr>");
@@ -23,7 +23,7 @@
     document.write("<hr>");
 
     // 인수가 3개 이상일 경우
-    var newStudy2 = study.splice(2, 1, "js");
+    var newStudy2 = study.splice(2, 1, "js"); //인덱스값이 2인 요소 1개 삭제하고, 새로운 요속 js추가
     document.write("반환된 배열 : " + newStudy2 + "<br>");
     document.write("변경된 배열 : " + study);
 	</script>

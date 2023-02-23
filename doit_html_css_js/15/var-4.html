@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>var 예약어를 사용한 지역 변수와 전역 변수</title>
+  <title>var 예약어를 사용한 변수의 재할당과 재선언</title>
 </head>
 <body>
 	<script>		
+  //함수선언
 		function addNumber(num1, num2) { 								
 			return num1 + num2;						
 		}
 		var sum = addNumber(10, 20);
-    console.log(sum);
+    console.log(sum); //30
     sum = 50;
-    console.log(sum);
+    console.log(sum); //50
     var sum = 100;
-    console.log(sum);
+    console.log(sum); //100
   </script>
 </body>
 </html>

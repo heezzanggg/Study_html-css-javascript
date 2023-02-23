@@ -18,8 +18,8 @@
   
 	<script>
 		var cover = document.getElementById("cover");
-		cover.addEventListener("mouseover",changePic, false);
-    cover.addEventListener("mouseout",originPic, false);
+		cover.addEventListener("mouseover",changePic, false); //포인터를 올리면 changePic()실행
+    cover.addEventListener("mouseout",originPic, false); //포인터를 내리면 originPic()실행
     
     function changePic() {
       cover.src = "images/easys-2.jpg";

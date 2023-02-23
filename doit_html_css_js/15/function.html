@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>함수</title>
+  <title>즉시 실행 함수</title>
   <style>
 		body {
 			padding-top:20px;
@@ -18,6 +18,16 @@
 </head>
 <body>
 	<script>		
+  /*
+  (function(){
+    명령
+  }())
+  */
+ /*
+ (function(매개변수){
+    명령
+ }(인수))
+ */
     (function() {
       var userName = prompt("이름을 입력하세요.");
       document.write("안녕하세요? <span class='accent'>" + userName + "</span>님!");

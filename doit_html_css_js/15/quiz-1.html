@@ -7,7 +7,33 @@
 </head>
 <body>
   <script>
+		/*
+		var x = prompt("숫자(x)를 입력하시오");
+		var y = prompt("숫자(y)를 입력하시오");
 
+		if(x===y){
+			result = parseInt(x)*parseInt(y) ;
+			console.log(result);
+		}else{
+			sumMulti(x,y);
+		}
+
+		function sumMulti(x,y){
+			
+			console.log(parseInt(x)+parseInt(y));
+		}
+		*/
+
+		function sumMulti(x,y){
+			if(x===y){
+				return x*y;
+			}else{
+				return x+y;
+			}
+		}
+
+		console.log(sumMulti(5,10));
+		console.log(sumMulti(10,10));
   </script>
 </body>
 </html>

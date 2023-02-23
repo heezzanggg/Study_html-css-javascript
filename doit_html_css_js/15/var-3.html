@@ -9,7 +9,12 @@
   <script>		 
     var x = 10;
 
-		function displayNumber() { 								
+		function displayNumber() { 	
+      /*
+      자바스크립트 해석기는 함수 소스를 훑어보면서 var를 이용한 변수는 따로 기억해 둠. 
+      실제 코드 => console.log()~ / var y = 20;
+      해석기가 인식 하는 코드 => var y ; / console.log()~ / y=20;
+      */							
       console.log("x is " + x);
       console.log("y is " + y);      
       var y = 20;
