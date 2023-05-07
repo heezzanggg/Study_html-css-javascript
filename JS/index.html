@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올때메로나</h2>
+
+    <!-- ui만드는 법 :1.미리 디자인해놓고 숨김 2.버튼 누르거나 하면 보여줌 -->
+    <div>
+      <div id="alert" class="alert-box">
+        <p id="alert-title">Alert 박스</p>
+        <!-- <button class="close-btn" onclick="alertClose()">
+        닫기
+      </button> -->
+        <!-- <button class="close-btn" onclick="alert('none')">X</button> -->
+        <button class="close-btn" id="close-btn">X</button>
+      </div>
+    </div>
+
+    <div>
+      <!-- <button class="open-btn" onclick="alertShow()">버튼</button> -->
+      <button class="open-btn" onclick="alert('block')">버튼1</button>
+      <button onclick="alertTest('아이디를 입력 안하셨어요','block')">
+        버튼 2
+      </button>
+      <button onclick="alertTest('비번을 입력 안하셨어요','block')">
+        버튼 3
+      </button>
+      <button id="btn3">버튼 4</button>
+    </div>
+
+    <div></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
